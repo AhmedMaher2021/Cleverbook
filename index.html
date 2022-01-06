@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleverBook</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <h1 class="logo">Cleverbook</h1>
+            <ul>
+                <li><i class="bi bi-bell"></i></li>
+                <li><i class="bi bi-envelope"></i></li>
+                <li><i class="bi bi-collection-play"></i></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="">
+            </div>
+        </div>
+        <!--settings-menu---------->
+
+
+        <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="https://randomuser.me/api/portraits/men/1.jpg">
+                    <div>
+                        <p>John Nicholson</p>
+                        <a href="#">See Your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <i class="bi bi-info-circle-fill"></i>
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links">
+                    <i class="bi bi-gear-fill settings-icon"></i>
+                    <a href="#">Settings & Privacy <i class="bi bi-caret-right-fill"></i></a>
+                </div>
+                <div class="settings-links">
+                    <i class="bi bi-question-diamond-fill settings-icon"></i>
+                    <a href="#">Help & Support <i class="bi bi-caret-right-fill"></i></a>
+                </div>
+                <div class="settings-links">
+                    <i class="bi bi-eye-fill settings-icon"></i>
+                    <a href="#">Display & Accessibility <i class="bi bi-caret-right-fill"></i></a>
+                </div>
+                <div class="settings-links">
+                    <i class="bi bi-box-arrow-right settings-icon"></i>
+                    <a href="#">Logout<i class="bi bi-caret-right-fill"></i></a>
+                </div>
+            </div>
+            
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <!--left-sidebar---------->
+
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><i class="bi bi-newspaper"></i>Latest News</a>
+                <a href="#"><i class="bi bi-people-fill"></i>Friends</a>
+                <a href="#"><i class="bi bi-bookmark-plus-fill"></i>Group</a>
+                <a href="#"><i class="bi bi-cart3"></i>Marketplace</a>
+                <a href="#"><i class="bi bi-play-btn-fill"></i>Watch</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="img/pexels-lukas-574071.jpg">Web Developers</a>
+                <a href="#"><img src="img/pexels-kaboompics-com-6444.jpg">Web Design Course</a>
+                <a href="#"><img src="img/pexels-tranmautritam-251225.jpg">Full Stack Development</a>
+                <a href="#"><img src="img/pexels-ivan-samkov-4458550.jpg">Website Experts</a>
+            </div>
+        </div>
+        <!--main-content---------->
+
+
+
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <i class="bi bi-plus-circle-fill"></i>
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="https://randomuser.me/api/portraits/men/15.jpg">
+                    <p>Alison mic</p>
+                </div>
+                <div class="story story3">
+                    <img src="https://randomuser.me/api/portraits/women/13.jpg">
+                    <p>Emma Khan</p>
+                </div>
+                <div class="story story4">
+                    <img src="https://randomuser.me/api/portraits/women/14.jpg">
+                    <p>Sophia M.</p>
+                </div>
+                <div class="story story5">
+                    <img src="https://randomuser.me/api/portraits/men/18.jpg">
+                    <p>Eddy Ron</p>
+                </div>
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="https://randomuser.me/api/portraits/men/1.jpg">
+                    <div>
+                        <p>John Nicholson</p>
+                        <small>Public <i class="bi bi-caret-down-fill"></i></small>
+                    </div>
+                </div>
+
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind, John?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><i class="bi bi-camera-video-fill"></i> Live</a>
+                        <a href="#"><i class="bi bi-images"></i> Photo/Video</a>
+                        <a href="#"><i class="bi bi-emoji-smile"></i>Feeling/Activity</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="https://randomuser.me/api/portraits/men/1.jpg">
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>June 24 2021, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="bi bi-three-dots-vertical"></i></a>
+                </div>
+                
+                <p class="post-text">Keep your face to the Sunshine and you can never see the Shadow. <a href="#">#Keep_Going</a></p>
+                <img src="img/pexels-andrea-piacquadio-3764580.jpg" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><i class="bi bi-hand-thumbs-up-fill"></i> 120</div>
+                        <div><i class="bi bi-pen-fill"></i> 45</div>
+                        <div><i class="bi bi-share-fill"></i> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="https://randomuser.me/api/portraits/men/1.jpg">
+                        <i class="bi bi-caret-down-fill"></i>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/تنزيل.png">
+                        <div>
+                            <p>The University of Arizona</p>
+                            <span>June 18 2021, 5:23 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="bi bi-three-dots-vertical"></i></a>
+                </div>
+                
+                <p class="post-text">Ranked as a Top 10 Online Graduate Engineering Program by US News and World Report. Learn To Design Secure Systems, Use Cloud Platforms, And Build Neural Networks.
+                <a href="https://www.arizona.edu/">#The_University_of_Arizona</a></p>
+                <img src="img/pexels-monstera-6238120.jpg" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><i class="bi bi-hand-thumbs-up-fill like-two"></i> 9.1K</div>
+                        <div><i class="bi bi-pen-fill"></i> 370</div>
+                        <div><i class="bi bi-share-fill"></i> 8K</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/تنزيل.png">
+                        <i class="bi bi-caret-down-fill"></i>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/Disney+_logo.svg.png">
+                        <div>
+                            <p>Disney</p>
+                            <span>June 21 2021, 8:03 am</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="bi bi-three-dots-vertical"></i></a>
+                </div>
+                
+                <p class="post-text">Movies move us like nothing else can, whether they're scary, funny, dramatic, romantic or anywhere in-between. So many titles, so much to experience.
+                <a href="https://ar.disneyme.com/">#Book_a_ticket_now</a></p>
+                <img src="img/pexels-lê-minh-3062541.jpg" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><i class="bi bi-hand-thumbs-up-fill"></i> 96.3K</div>
+                        <div><i class="bi bi-pen-fill"></i> 5K</div>
+                        <div><i class="bi bi-share-fill"></i> 86.4K</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/Disney+_logo.svg.png">
+                        <i class="bi bi-caret-down-fill"></i>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/lqgfTMe.jpg">
+                        <div>
+                            <p>Liverpool F.C</p>
+                            <span>June 11 2021, 9:00 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="bi bi-three-dots-vertical"></i></a>
+                </div>
+                
+                <p class="post-text">The Reds are long time admirers of the French sensation and are reportedly exploring the possibility of signing him.
+                <a href="#">#Watch</a></p>
+                <img src="img/pexels-tembela-bohle-1884574.jpg" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><i class="bi bi-hand-thumbs-up-fill"></i> 2.3K</div>
+                        <div><i class="bi bi-pen-fill"></i> 840</div>
+                        <div><i class="bi bi-share-fill"></i> 1.5K</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/lqgfTMe.jpg">
+                        <i class="bi bi-caret-down-fill"></i>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="https://randomuser.me/api/portraits/women/9.jpg">
+                        <div>
+                            <p>Ava Jn.</p>
+                            <span>March 28 2021, 4:30 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="bi bi-three-dots-vertical"></i></a>
+                </div>
+                
+                <p class="post-text">I miss you my dear vacation &#x1F60D;</p>
+                <img src="img/pexels-vincent-gerbouin-1172518.jpg" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><i class="bi bi-hand-thumbs-up-fill"></i> 56</div>
+                        <div><i class="bi bi-pen-fill"></i> 4</div>
+                        <div><i class="bi bi-share-fill"></i> 18</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="https://randomuser.me/api/portraits/women/9.jpg">
+                        <i class="bi bi-caret-down-fill"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <button type="button" class="load-more-btn">Load More</button>
+
+
+
+
+
+
+
+        </div>
+
+
+
+        <!--right-sidebar---------->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>July</span>
+                </div>
+                <div class="right-event">
+                    <h4>Birthday</h4>
+                    <p><i class="bi bi-geo-alt-fill"></i>Rehab City</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="bi bi-geo-alt-fill"></i> Willson Teck Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="img/pexels-rfstudio-3810758.jpg" class="sidebar-ads">
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="https://randomuser.me/api/portraits/women/8.jpg">
+                </div>
+                <p>Isabella Chin</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="https://randomuser.me/api/portraits/women/9.jpg">
+                </div>
+                <p>Ava Jn.</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="https://randomuser.me/api/portraits/women/10.jpg">
+                </div>
+                <p>sarah Rose</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 2021 - Ahmed Maher</p>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
